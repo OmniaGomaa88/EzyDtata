@@ -1,0 +1,329 @@
+header {
+  background-color: #494c52;
+  box-shadow: 5px 10px 8px 5px #888888;
+  margin-top: 2%;
+  height: 10vh;
+}
+header h1 {
+  color: rgb(240, 234, 234);
+  padding-top: 1%;
+  padding-left: 2%;
+  text-align: start;
+}
+h1 {
+  text-align: center;
+}
+#container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+
+  margin-bottom: 5%;
+}
+#right {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+#blocks {
+  background-color: #f8f9fa;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  /* border: rgb(177, 163, 163) 2px solid; */
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+.input,
+.replace,
+.output {
+  margin: 0 5px;
+  width: 150px;
+  height: 80px;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 20px;
+  margin-top: 3%;
+  /* position: absolute; */
+}
+.input {
+  background-color: #34495e;
+  z-index: 3;
+  /* top: 2%; */
+}
+.replace {
+  background-color: #5c6c7c;
+  /* top: 30%; */
+}
+.output {
+  background-color: #767d85;
+  /* top: 60%; */
+}
+#output img {
+  display: none;
+}
+
+#myDiagramDiv {
+  position: relative;
+  width: 70%;
+  height: 100%;
+  margin-left: 2%;
+}
+.workPlace {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: 2%;
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+
+#result {
+  background-color: #f8fcf7;
+  width: 20%;
+  height: 100%;
+  box-shadow: 10px 10px 8px 10px #888888;
+}
+#réglage {
+  position: relative;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  margin-left: 2%;
+ 
+  transition: all 2s;
+}
+#box {
+  border: 2px solid black;
+  width: 99%;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: rgb(7, 7, 7);
+  font-size: 15px;
+}
+#box:hover {
+  background-color: rgb(188, 190, 194);
+}
+
+#box img {
+  width: 10px;
+  float: right;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  text-align: left;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: transparent;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding-left: 2%;
+  margin-top: 5%;
+  color: rgb(97, 91, 129);
+  font-size: 20px;
+}
+.form label {
+  text-align: right;
+  margin-bottom: 2%;
+}
+.form input,
+select {
+  background-color: white;
+  height: 30px;
+  width: 98%;
+  border: 1px solid rgb(172, 168, 168);
+  transition: all 2s;
+}
+.form button {
+  margin-left: 10%;
+  color: rgb(250, 251, 253);
+  border: 2px solid #979793;
+  background-color: rgb(142, 146, 138);
+  border-radius: 5%;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-shadow: inset 0 0 0 0 rgb(177, 174, 174);
+  transition: ease-out 0.4s;
+  margin: 5%;
+  outline: none;
+  cursor: pointer;
+}
+.form button:hover {
+  box-shadow: inset 150px 0 0 0 rgb(253, 250, 250);
+  color: rgb(101, 102, 168);
+}
+
+.newElmentStyle {
+  width: 30%;
+  height: 100px;
+  border: 2px solid rgb(27, 27, 27);
+  border-radius: 20px;
+  background-color: #b7bbc5;
+  transition: all 1s;
+  margin-top: 10%;
+  position: relative;
+}
+.InputStyle {
+  position: relative;
+  border: 2px solid rgb(66, 69, 83);
+  background-color: #cdd1d6;
+  box-shadow: 4px 5px rgb(184, 184, 185);
+  height: auto;
+  width: 200px;
+  padding-bottom: 5%;
+}
+.régle,
+.outPut {
+  margin-left: 5%;
+  background-color: #dddfe0;
+  box-shadow: 4px 5px rgb(86, 86, 94);
+  height: 80px;
+  border: 5px solid #32557f;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px/100px;
+}
+.outPut {
+  background-color: rgb(86, 86, 94);
+}
+.DeletButton {
+  width: 10%;
+  padding-left: 2%;
+  padding-right: 5%;
+  transition: all 1s;
+  position: absolute;
+  bottom: 20px;
+  left: 3px;
+}
+.DeletButton:hover {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(1.4);
+}
+.ArrowRight {
+  position: absolute;
+  bottom: 5px;
+}
+
+.EditButton:hover {
+  -webkit-transform: rotate(15deg) scale(1.4);
+  transform: rotate(15deg) scale(1.4);
+}
+.ArrowDown {
+  width: 30%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.addButton {
+  display: block;
+  width: 10%;
+  padding-left: 8%;
+  padding-right: 5%;
+  transition: all 1s;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.minusButton {
+  display: none;
+  width: 10%;
+  padding-left: 8%;
+  padding-right: 5%;
+  transition: all 1s;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+#title {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+}
+#BlockText {
+  color: #5c6c7c;
+  font-size: 30px;
+}
+
+
+
+
+/* blocks show Data */
+#showData{
+  position: absolute;
+  top: 3%;
+  transition: all 1s;
+}
+#showData p{
+  color: #5c6c7c;
+font-family: 'Times New Roman', Times, serif;
+font-weight: bold;
+font-size: 20px;
+}
+#showData h1,h2{
+color: #5c6c7c;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: bold;
+}
+
+#showData span{
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#blocksData{
+  display: flex;
+  flex-direction: column;
+ 
+}
+#blocksHeader{
+  display: flex;
+  flex-direction: row;
+margin-bottom: 5%;
+}
+#blocksHeader img{
+  width: 20%;
+  margin-right: 2%;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+border: black 2px solid;
+background-color:white ;
+margin-bottom: 5%;
+}
+.blockTitle{
+  display: flex;
+  flex-direction: row;
+}
+.blockData{
+  display: flex;
+  flex-direction: column;
+}
