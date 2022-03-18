@@ -14,5 +14,7 @@ HTML
 CSS
 JAVASCRIPT (PROTOTYPE-CLONER UN NOUD)
 
+LINK
+https://omniagomaa88.github.io/EzyDtata/
 
 
